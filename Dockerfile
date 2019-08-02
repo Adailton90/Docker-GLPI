@@ -3,7 +3,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get upgrade
 
-#Instalando apache .
+#Instalando apache
 RUN apt-get install -y apache2
 
 #removendo o arquivo index.html porque por padrão o apache procura ele para renderizar como página principal, como nós queremos a tela
