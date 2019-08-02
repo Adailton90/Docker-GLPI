@@ -1,5 +1,5 @@
 node {
-    /* comentando porque ja configureir no jenkins o checkout do repositório
+    /*
     stage('Fazendo Checkout no repositorio git') {
         git 'https://github.com/Adailton90/Docker-GLPI.git'
     }*/
