@@ -7,7 +7,7 @@ node {
         sh 'docker build -t docker-glpi .'
     }
     stage('Deploy: Subindo container do glpi'){
-        sh 'dokcer rm -f container-glpi || true'
+        sh 'docker rm -f container-glpi || true'
         sh 'docker run -d -p 8090:80 --name container-glpi docker-glpi'
     }
 }
