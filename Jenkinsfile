@@ -1,8 +1,7 @@
-node {
-    /*
+node {    
     stage('Fazendo Checkout no repositorio git') {
         git 'https://github.com/Adailton90/Docker-GLPI.git'
-    }*/
+    }
     stage('Build da imagem docker-glpi'){
         sh 'docker rmi -f docker-glpi || true'
         sh 'docker build -t docker-glpi .'
