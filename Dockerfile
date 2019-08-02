@@ -21,7 +21,7 @@ RUN chown -R www-data:www-data /var/www/html
 
 EXPOSE  80
 
-#Inciando o apache.
+#Inciando o apache
 ENTRYPOINT ["apache2ctl"]
 CMD ["-DFOREGROUND"]
 
